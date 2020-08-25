@@ -120,7 +120,7 @@ select next item** | [See Emmet docs](https://docs.emmet.io/actions/select-item/
 select previous item** | [See Emmet docs](https://docs.emmet.io/actions/select-item/)
 
 \* Not a default VS code shortcut, requires custom keybinding before it can work  
-\*\* Also not custom, but also requires for you to disable Mac OS default Mission Control shortcuts so you can free up cntrl (ˆ). Currently does [not work](https://github.com/microsoft/vscode/issues/87608) in Typescript React files (.tsx) in VS Code. 
+\*\* Also not custom, but also requires for you to disable Mac OS default Mission Control shortcuts so you can free up cntrl (ˆ). Currently does [not work](https://github.com/microsoft/vscode/issues/87608) in Typescript React files (.tsx) in VS Code.  
 \*\*\* Different from the global command because VS code automatically types the closing char when typing grouping symbols. Same goes for {}, [], '', "", \`\`, and ()
 
 ### Chrome specific commands
