@@ -168,9 +168,9 @@ g status | runs `git status` (presses enter)
 g diff | runs `git diff`
 g add new | runs `git add .`
 g add all | runs `git add -A :/`
-g commit | types `git commit -m \"\"` with cursor placed in middle of quotes
+g commit | types `git commit -m ""` with cursor placed in middle of quotes
 g merge | just types `git merge ` into console
-g commit all | types `git commit -am \"\"` with cursor placed in middle of quotes
+g commit all | types `git commit -am ""` with cursor placed in middle of quotes
 g push | runs `git push`
 g pull | runs `git pull`
 g log | runs `git log`
