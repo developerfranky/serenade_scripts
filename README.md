@@ -162,7 +162,7 @@ Also, "git" gets misinterprated as "get" often so I'm using the word "g" instead
 
 
 
-Voice Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description 
+Voice Command | Description 
 ------------ | -------------
 g status | runs `git status` (presses enter)
 g diff | runs `git diff`
