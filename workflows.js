@@ -401,6 +401,12 @@ global("cd", async (api) => {
 	await api.typeText("cd ");
 });
 
+global("cd home", async (api) => {
+	await api.focus("term");
+	await api.typeText("cd ~");
+	await api.pressKey("return");
+});
+
 global("cd <%text%>", async (api, matches) => {
 	await api.focus("term");
 	await api.typeText("cd " + matches.text);
