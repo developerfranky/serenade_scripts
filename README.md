@@ -103,7 +103,7 @@ next partial | Goes to next partial
 previous partial | Goes to prev partial
 expand selection | Expands the current selection (VERY useful, try it out in you code over and over)
 shrink selection | Shrinks the current selection
-braces | Types braces with cursor in the middle. Different from the global command because VS code automatically types the closing char when typing grouping symbols.
+braces*** | Types braces with cursor in the middle.
 brackets | Types brackets 
 parens | Types parens
 single quotes | Types single quotes
@@ -121,6 +121,7 @@ select previous item** | [See Emmet docs](https://docs.emmet.io/actions/select-i
 
 \* Not a default VS code shortcut, requires custom keybinding before it can work  
 \*\* Also not custom, but also requires for you to disable Mac OS default Mission Control shortcuts so you can free up cntrl (ˆ). Currently does [not work](https://github.com/microsoft/vscode/issues/87608) in Typescript React files (.tsx) in VS Code. 
+\*\*\* Different from the global command because VS code automatically types the closing char when typing grouping symbols. Same goes for {}, [], '', "", \`\`, and ()
 
 ### Chrome specific commands
 
