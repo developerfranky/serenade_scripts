@@ -34,11 +34,11 @@ semicolon | Presses semicolon
 dash | Presses dash
 underscore | Presses underscore
 slash | Presses slash
-braces | Types `{}` with the cursor place between them (this is where the `expand` command comes in)
-brackets | Types `[]` with the cursor place between them (this is where the `expand` command comes in)
-parens | Types `()` with the cursor place between them (this is where the `expand` command comes in)
-single quotes | Types `''` with the cursor place between them (this is where the `expand` command comes in)
-double quotes | Types `""` with the cursor place between them (this is where the `expand` command comes in)
+braces | Types `{}` with cursor between them (the `expand` command ise useful here)
+brackets | Types `[]` with cursor between them (the `expand` command ise useful here)
+parens | Types `()` with cursor between them (the `expand` command ise useful here)
+single quotes | Types `''` with cursor between them
+double quotes | Types `""` with cursor between them
 quotes | same as `double quotes`
 ticks | Types `` ` ` `` with the cursor place between them 
 type single tag <%text%> | Types self-closing tag `<YourTagName />`
