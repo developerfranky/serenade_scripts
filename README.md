@@ -177,14 +177,4 @@ g log | runs `git log`
 g branch | runs `git branch`
 g checkout | types `git checkout `
 g checkout new | types `git checkout -b `
-g merge in <%text%> | Merges in the branch you specify into your current branch. First it checks out the branch specified and pulls. Then it checks out the branch you were originally on and merges in the branch specified. Sample use: if you're on a branch called `staging` and you want to merge in a more recent branch called `testing` then the command `g merge in testing` will checkout `testing`, pull, checkout `staging`, and run `git merge testing`.
-
-
-<style>
-table th:first-of-type {
-    width: 40%;
-}
-table th:nth-of-type(2) {
-    width: 60%;
-}
-</style>
+g merge in <%text%> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Merges in the branch you specify into your current branch. First it checks out the branch specified and pulls. Then it checks out the branch you were originally on and merges in the branch specified. Sample use: if you're on a branch called `staging` and you want to merge in a more recent branch called `testing` then the command `g merge in testing` will checkout `testing`, pull, checkout `staging`, and run `git merge testing`.
