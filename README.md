@@ -4,6 +4,8 @@
 
 Mostly general text editing commands and app navigation
 
+General 
+
 If you have the same voice command for a global snippet and an app-specific snippet, the app-specific snippet must be defined first in the file.
 
 
@@ -140,6 +142,7 @@ Voice Command | Description
 open in code | Must have [VS Code shell command installed](https://code.visualstudio.com/docs/setup/mac)
 cd | ...
 cd <%text%> | ...
+cd home | changes to home directory (presses enter)
 cancel | Presses control + c
 clear console | types clear into the terminal and presses enter
 
