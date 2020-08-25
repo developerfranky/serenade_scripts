@@ -162,7 +162,7 @@ Also, "git" gets misinterprated as "get" often so I'm using the word "g" instead
 
 
 
-Voice Command (can be called globally) | Description 
+Voice Command | Description 
 ------------ | -------------
 g status | runs `git status` (presses enter)
 g diff | runs `git diff`
@@ -177,4 +177,4 @@ g log | runs `git log`
 g branch | runs `git branch`
 g checkout | types `git checkout `
 g checkout new | types `git checkout -b `
-g merge in <%text%> | Merges in the branch you specify into your current branch. First it checks out the branch specified and pulls. Sample use: if you're on a branch called `staging` and you want to merge in a more recent branch called `testing` then the command `g merge in testing` will checkout `testing`, pull, checkout `staging`, and run `git merge testing`.
+g merge in <%text%>  (can be called globally)| Merges in the branch you specify into your current branch. First it checks out the branch specified and pulls. Sample use: if you're on a branch called `staging` and you want to merge in a more recent branch called `testing` then the command `g merge in testing` will checkout `testing`, pull, checkout `staging`, and run `git merge testing`.
