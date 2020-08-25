@@ -1,123 +1,123 @@
-serenade.language("python").snippet(
-  "test method <%name%>",
-  "def test_<%name%>(self):<%newline%><%indent%>pass",
-  { "name": ["identifier", "underscores"] },
-  "method"
-);
+// serenade.language("python").snippet(
+//   "test method <%name%>",
+//   "def test_<%name%>(self):<%newline%><%indent%>pass",
+//   { "name": ["identifier", "underscores"] },
+//   "method"
+// );
 
 
-serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
-	"new react file class <%name%>",
-	`import React from 'react'
-	import '/<%name%>.module.scss'
+// serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
+// 	"new react file class <%name%>",
+// 	`import React from 'react'
+// 	import '/<%name%>.module.scss'
 	
-	interface Props {
+// 	interface Props {
 
-	}
+// 	}
 
-	interface State {
+// 	interface State {
 
-	}
+// 	}
 	
-	class <%name%> extends React.Component<Props, State> {
-			constructor(props) {
-				super(props)
-				this.state = {
+// 	class <%name%> extends React.Component<Props, State> {
+// 			constructor(props) {
+// 				super(props)
+// 				this.state = {
 
-				}
-			}
-			render() {
-					return (
-							<div className={}>
-									<%cursor%>
-							</div>
-					)
-			}
-	}
+// 				}
+// 			}
+// 			render() {
+// 					return (
+// 							<div className={}>
+// 									<%cursor%>
+// 							</div>
+// 					)
+// 			}
+// 	}
 
-	<%name%>.defaultProps = {
+// 	<%name%>.defaultProps = {
 		
-	}
+// 	}
 
-	export default <%name%>`,
-	{ "name": ["pascal", "identifier"], }
+// 	export default <%name%>`,
+// 	{ "name": ["pascal", "identifier"], }
 
-)
+// )
 
 
-serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
-	"new react file function <%name%>",
-	`import React from 'react'
-	import '/<%name%>.module.scss'
+// serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
+// 	"new react file function <%name%>",
+// 	`import React from 'react'
+// 	import '/<%name%>.module.scss'
 	
-	interface Props {
+// 	interface Props {
 
-	}
+// 	}
 	
-	const <%name%>: React.FC<Props> = (props) => {
-		return (
-				<div className={}>
-						<%cursor%>
-				</div>
-		)
-	}
+// 	const <%name%>: React.FC<Props> = (props) => {
+// 		return (
+// 				<div className={}>
+// 						<%cursor%>
+// 				</div>
+// 		)
+// 	}
 
-	<%name%>.defaultProps = {
+// 	<%name%>.defaultProps = {
 		
-	}
+// 	}
 
-	export default <%name%>`,
-	{ "name": ["pascal", "identifier"], }
+// 	export default <%name%>`,
+// 	{ "name": ["pascal", "identifier"], }
 
-)
+// )
 
 
-serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
-	"new react function <%name%>",
-	`interface <%name%>Props {
+// serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
+// 	"new react function <%name%>",
+// 	`interface <%name%>Props {
 
-	}
+// 	}
 	
-	const <%name%>: React.FC<<%name%>Props> = (props) => {
-		return (
-				<div className={}>
-						<%cursor%>
-				</div>
-		)
-	}
+// 	const <%name%>: React.FC<<%name%>Props> = (props) => {
+// 		return (
+// 				<div className={}>
+// 						<%cursor%>
+// 				</div>
+// 		)
+// 	}
 
-	<%name%>.defaultProps = {
+// 	<%name%>.defaultProps = {
 		
-	}`,
-	{ "name": ["pascal", "identifier"], }
-)
+// 	}`,
+// 	{ "name": ["pascal", "identifier"], }
+// )
 
 
 
-serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
-	"react component did mount",
-	`componentDidMount() {
-		<%cursor%>
-	}`,
-	null,
-	"method"
-)
+// serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
+// 	"react component did mount",
+// 	`componentDidMount() {
+// 		<%cursor%>
+// 	}`,
+// 	null,
+// 	"method"
+// )
 
-serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
-	"react component will unmmount",
-	`componentWillUnmount() {
-		<%cursor%>
-	}`,
-	null,
-	"method"
-)
+// serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
+// 	"react component will unmmount",
+// 	`componentWillUnmount() {
+// 		<%cursor%>
+// 	}`,
+// 	null,
+// 	"method"
+// )
 
-serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
-	"react component did update",
-	`componentDidUpdate(prevProps, prevState) {
-		<%cursor%>
-	}`,
-	null,
-	"method"
-)
+// serenade.scope("vscode", ["typescript", "typescriptreact"]).snippet(
+// 	"react component did update",
+// 	`componentDidUpdate(prevProps, prevState) {
+// 		<%cursor%>
+// 	}`,
+// 	null,
+// 	"method"
+// )
 
