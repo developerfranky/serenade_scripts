@@ -162,7 +162,7 @@ Also, "git" gets misinterprated as "get" often so I'm using the word "g" instead
 
 
 
-Voice Command | Description 
+Voice Command (can be called globally) | Description 
 ------------ | -------------
 g status | runs `git status` (presses enter)
 g diff | runs `git diff`
