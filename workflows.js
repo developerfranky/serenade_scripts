@@ -67,14 +67,6 @@ vscode("double quotes", _ => press(_, "\""));
 vscode("quotes", _ => press(_, "\""));
 vscode("ticks", _ => press(_, "`"));
 
-global("type title case <%text%>", async (api, matches) => {
-	const wordlist = matches.text.split(" ");
-	for await (word of wordlist) {
-		await api.typeText(word.charAt(0).toUpperCase() + word.slice(1) + " ");
-	}
-	await api.pressKey("backspace");
-});
-
 // clear single quotes
 // clear quotes
 
@@ -139,6 +131,16 @@ global("find everywhere <%text%>", async (api, matches) => {
 	await api.pressKey("f", ["command", "shift"]);
 	await api.type(matches.text);
 });
+
+
+global("type title case <%text%>", async (api, matches) => {
+	const wordlist = matches.text.split(" ");
+	for await (word of wordlist) {
+		await api.typeText(word.charAt(0).toUpperCase() + word.slice(1) + " ");
+	}
+	await api.pressKey("backspace");
+});
+
 
 // for when you add a pair of (), {}, or [] and want to expand them
 // but your cursor is positioned after
@@ -231,14 +233,19 @@ global("single tag", async api => {
 	await api.pressKey("left");
 });
 
-vscode("uppercase", async (api) => {
-	// NOT A DEFAULT. Copied from sublime.
-	// command + K chord to U (press U after command+K)
-	await api.pressKey("k", ["command"]);
-	await api.pressKey("u");
+global("spotlight", _ => press(_, "space", ["command"]));
+
+global("open code", async (api) => {
+	await api.pressKey("space", ["command"]);
+	await api.typeText("Visual Studio Code");
+	await api.pressKey("return");
 });
 
-global("spotlight", _ => press(_, "space", ["command"]));
+global("open terminal", async (api) => {
+	await api.pressKey("space", ["command"]);
+	await api.typeText("terminal");
+	await api.pressKey("return");
+});
 
 global("left", _ => press(_, "left"));
 global("right", _ => press(_, "right"));
@@ -397,18 +404,6 @@ global("cd", async (api) => {
 global("cd <%text%>", async (api, matches) => {
 	await api.focus("term");
 	await api.typeText("cd " + matches.text);
-});
-
-global("open code", async (api) => {
-	await api.pressKey("space", ["command"]);
-	await api.typeText("Visual Studio Code");
-	await api.pressKey("return");
-});
-
-global("open terminal", async (api) => {
-	await api.pressKey("space", ["command"]);
-	await api.typeText("terminal");
-	await api.pressKey("return");
 });
 
 global("open in code", async (api) => {
