@@ -57,6 +57,10 @@ vscode("previous partial", _ => press(_, "left", ["option", "control"]));
 vscode("expand selection", _ => press(_, "right", ["shift", "control"]));
 vscode("shrink selection", _ => press(_, "left", ["shift", "control"]));
 
+// works with multiple line selections
+vscode("outdent", _ => press(_, "[", ["command"]));
+vscode("indent", _ => press(_, "]", ["command"]));
+
 
 // in vscode pressing ( [ { " ' or ` will wrap the selection in respective symbols so you only need to press the opening symbol unlike the global command
 vscode("braces", _ => press(_, "{"));
@@ -273,10 +277,6 @@ global("switch window", _ => press(_, "`", ["command"]));
 global("scroll", _ => press(_, "pagedown"));
 global("scroll down", _ => press(_, "pagedown"));
 global("scroll up", _ => press(_, "pageup"));
-
-// works with multiple line selections
-global("outdent", _ => press(_, "[", ["command"]));
-global("indent", _ => press(_, "]", ["command"]));
 
 global("zoom in", _ => press(_, "+", ["command"]));
 global("zoom out", _ => press(_, "-", ["command"]));
